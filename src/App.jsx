@@ -10,7 +10,7 @@ function App() {
 return (
   <>
   <NavBar/>
-  <ItemListContainer listas="Esto es una lista"/>
+  <ItemListContainer listas="Hola"/>
   </>
 )
 
