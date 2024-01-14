@@ -1,12 +1,8 @@
-import React, {useState} from 'react'
-
 const CartWidget = () => {
-    const [contador, setContador] = useState(0)
-
-
   return (
-    <div className='CartWidget'>
-        <i className="fa-solid fa-cart-shopping"> {contador}</i>
+    <div id="cartwidget" className='CartWidget'>
+      <i className="fa-solid fa-cart-shopping"></i>
+      <p>1</p>
     </div>
   )
 }
