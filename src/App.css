@@ -168,8 +168,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  list-style: none;
 }
-
 
 .CartWidget p{
   margin-top:revert;
@@ -187,6 +187,13 @@
 }
 
 .saludo{
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+
+.TituloError{
   font-size: 48px;
   font-weight: bold;
   padding-top: 16px;
