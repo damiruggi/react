@@ -1,7 +1,6 @@
 #root {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -162,6 +161,20 @@
   margin-bottom: 20px;
 }
 
+.controles{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.terminar{
+  width: 100%;
+}
+
+.item-count{
+  width: 200px;
+}
 
 .CartWidget {
   color: white;
@@ -197,4 +210,195 @@
   font-size: 48px;
   font-weight: bold;
   padding-top: 16px;
+}
+
+.item-list-container{
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+
+.button_primary {
+  width: auto;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+  border: solid 2px rgba(180, 180, 180, 0.2);
+  color: rgb(255, 255, 255);
+  margin-top:6px
+}
+
+.button_primary:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 2px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+
+
+.button_secondary {
+  width: auto;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(98, 98, 98, 0.2);
+  border: solid 2px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  margin-top:6px
+}
+
+.button_secondary:hover {
+  cursor: pointer;
+  background-color: rgb(98, 98, 98);
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+ul {
+  list-style:none;
+}
+
+li {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 50%;
+  text-align: left;
+}
+
+
+.imagedetail{
+  height: auto;
+  width: 50%;
+}
+
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+
+form{
+  width: 25%;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .item-detail{
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .item-detail .texto{
+    width: 100%;
+  }
+
+  .item-detail .imagen{
+    width: 100%;
+  }
+
+  .item-count{
+    width: 100%;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 0 16px;
+    text-align: center;
+  }
+  
+  
+  .imagedetail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+
+  ul{
+    padding-left: 0;
+  }
+
+  .total {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  
+  .button_primary {
+  width: 100%;
+  }
+
+  .button_secondary {
+    width: 100%;
+  }
+
+  form{
+    width: 100%;
+  }
+  
+  .formulario{
+    width: 100%;
+    padding: 0;
+  }
 }

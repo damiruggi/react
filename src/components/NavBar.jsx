@@ -1,12 +1,11 @@
 import CartWidget from "./CartWidget";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container-fluid">
-            <Link to="/" className="brand">
-            <a className="navbar-brand" href="#"><img src="logo.svg" alt="" /></a>
+            <Link to="/" className="brand navbar-brand"><img src="logo.svg" alt="" />
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span className="navbar-toggler-icon"></span>

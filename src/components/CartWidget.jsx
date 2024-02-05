@@ -1,9 +1,17 @@
+import { CartContext } from "../context/CartContext";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+
 const CartWidget = () => {
+  const {cantidadTotal} = useContext (CartContext)
+  
   return (
-    <div id="cartwidget" className='CartWidget'>
+    <Link to="/carrito" id="cartwidget" className="CartWidget">
       <i className="fa-solid fa-cart-shopping"></i>
-      <p>1</p>
-    </div>
+      <p>{
+      cantidadTotal() !=0 ? cantidadTotal() : ""
+      }</p>
+    </Link>
   )
 }
 
