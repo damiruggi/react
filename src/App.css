@@ -124,7 +124,7 @@
 }
 
 .item-detail .texto{
-  width: 50%;
+  width: 30%;
   padding: 10px 50px;
   display: flex;
   flex-direction: column;
@@ -163,9 +163,10 @@
 
 .controles{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 12px;
+    align-items: center;
+    padding-bottom: 12px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 .terminar{
@@ -173,7 +174,12 @@
 }
 
 .item-count{
-  width: 200px;
+  width: 100%;
+}
+
+.contador{
+  width: 30px;
+  height: 30px;
 }
 
 .CartWidget {
@@ -270,6 +276,30 @@
 }
 
 
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+  border: solid 2px rgba(180, 180, 180, 0.2);
+  color: rgb(255, 255, 255);
+  margin-top:6px
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 2px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+
 .total {
   display: flex;
   flex-direction: column;
@@ -319,9 +349,29 @@ form{
 }
 
 
+.totalButtons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
 
 
+button {
+  margin-right: 16px;
+}
+
+hr {
+  width: 100%;
+}
+
+
+.mb-3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 
 

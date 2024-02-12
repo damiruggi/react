@@ -1,12 +1,13 @@
 import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
 import ItemDetailContainer from "./components/ItemDetailContainer";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./components/Error";
 import { CartProvider } from "./context/CartContext";
 import Carrito from "./components/Carrito";
 import Checkout from "./components/Checkout";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
     </CartProvider>
+
+    <Footer />
     </BrowserRouter>
   );
 }

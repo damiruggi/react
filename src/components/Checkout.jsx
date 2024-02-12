@@ -1,15 +1,19 @@
 import { useContext, useState } from "react"
+
 import FormularioCheckout from "./FormularioCheckout"
 import { CartContext } from "../context/CartContext"
 import { collection, addDoc } from "firebase/firestore"
 import db from "../db/db"
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
+
 
 const Checkout = () => {
     const [datosForm, setDatosForm] = useState ({
         nombre: "",
         telefono: "",
         email: "",
+        repetirEmail: "",
     })
 
     const {carrito, precioTotal} = useContext(CartContext)
@@ -25,8 +29,16 @@ const Checkout = () => {
         const orden = {
             comprador : {...datosForm},
             productos: [...carrito],
+            fecha: String(Date.now()),
+            estado: "No entregado",
             total: precioTotal()
         }
+
+if(datosForm.email !== datosForm.repetirEmail){
+    Swal.fire("Los campos de email no son iguales");
+    return
+}
+
         const ordenesRef = collection(db, "ordenes")
         addDoc(ordenesRef, orden)
             .then((respuesta) => {

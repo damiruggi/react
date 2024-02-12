@@ -1,8 +1,23 @@
-# React + Vite
+# Mi ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+| `JavaScript` | `css` | `Bootstrap` | `React` |
+| -------------- | ------- | ------------- | --------- |
 
-Currently, two official plugins are available:
+Este proyecto es un ecommerce de productos de indumentaria el cual te permite explorar los diferentes productos, filtrarlos por categorías o clickeando sobre un producto ve el detalle, tambien tiene integrado un carrito de compras y un checkout para que el usuario nos de sus datos de contacto, esta información queda guardada en firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación
+
+* `npm install`
+* `npm run dev`
+
+## Dependencias
+
+* `firebase`
+* `react-rooter-dom`
+* 
+
+## Contacto
+
+<a href="https://www.linkedin.com/in/damiruggi/" target="_blank" style="margin-right: 20px">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/LinkedIn.svg" alt="LinkedIn Juan Martin Perez" width="30">
+</a>
